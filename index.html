@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Insect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="screen">
+        <h1 class="header">Catch The Insect</h1>
+        <button class="playBtn" onclick="startGame()">Play Game</button>
+    </div>
+
+    <div class="screen">
+        <h1 class="header">What is your "favorite insect?"</h1>
+        <ul class="insects">
+            <li>
+                <button class="chooseInsectBtn" onclick="chooseFavInsect('fly')">
+                    <p>Fly</p>
+                    <img src="img/fly_PNG18175.png" alt="fly">
+                </button>
+            </li>
+            <li>
+                <button class="chooseInsectBtn" onclick="chooseFavInsect('mosquito')">
+                    <p>Mosquito</p>
+                    <img src="img/mosquito_PNG18175.png" alt="mosquito">
+                </button>
+            </li>
+            <li>
+                <button class="chooseInsectBtn" onclick="chooseFavInsect('spider')">
+                    <p>Spider</p>
+                    <img src="img/spider_PNG18175.png" alt="spider">
+                </button>
+            </li>
+            <li>
+                <button class="chooseInsectBtn" onclick="chooseFavInsect('roach')">
+                    <p>Roach</p>
+                    <img src="img/roach_PNG18175.png" alt="roach">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game">
+        <div class="game-info">
+            <div class="timer">Time: 00:00</div>
+            <div class="score">Score: 0</div>
+        </div>
+    </div>
+
+    <h6 class="annoyed-message" style="display: none;">
+        Are you annoyed yet?
+        <br>
+        You are playing an impossible game!!</h6>
+    <script src="scripts.js"></script>
+</body>
+</html>
